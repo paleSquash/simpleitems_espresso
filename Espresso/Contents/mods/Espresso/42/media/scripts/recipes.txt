@@ -1,0 +1,22 @@
+module Espresso_Recipe {
+    craftRecipe MakeEspressoMug
+    {
+        timedAction = MakeCoffee,
+        time = 20,
+        category = Cooking,
+        Icon = EspressoCup,
+        Tags = CoffeeMachine,
+        inputs
+        {
+            item 5 [Esp.Espresso] mode:destroy,
+            item 1 [Base.Teacup;Base.CeramicTeacup] mode:destroy,
+            -fluid 0.1 categories[Water],
+        }
+        outputs
+        {
+            item 1 Esp.CupOfEspresso,
+        }
+
+    }
+
+}

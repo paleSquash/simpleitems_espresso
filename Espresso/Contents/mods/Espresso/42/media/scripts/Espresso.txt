@@ -1,0 +1,56 @@
+module Esp {
+    model Espresso_M
+    {
+        mesh = Espresso/Esp_Model,
+        texture = Espresso_Texture,
+        scale = 0.4,
+    }
+ 
+ 
+    item Espresso
+    {
+        DisplayCategory = Food,
+        EatType = Candrink,
+        ItemType = base:food,
+        Icon = Espresso2,
+        Weight = 1.0,
+        FoodType = Coffee,
+        Packaged = true,
+        fatigueChange = -60.0,
+        HungerChange = -30.0,
+        ThirstChange = 60.0,
+        UnhappyChange = 20,
+        Calories = 2.0,
+        Carbohydrates = 0.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        StaticModel = Espresso_M,
+        WorldStaticModel = Espresso_M,
+    }
+
+    item CupOfEspresso
+    {
+        DisplayCategory = Food,
+        ReplaceOnUse = Base.Teacup,
+        PourType = Mug,
+        CustomEatSound = DrinkingFromMug,
+        CustomContextMenu = Drink,
+        EatType = Teacup,
+        ItemType = base:food,
+        Icon = EspressoCup,
+        Weight = 1.0,
+        FoodType = Coffee,
+        Packaged = false,
+        fatigueChange = -80.0,
+        HungerChange = -5.0,
+        ThirstChange = -20.0,
+        UnhappyChange = -30,
+        Calories = 2.0,
+        Carbohydrates = 0.0,
+        Lipids = 0.0,
+        Proteins = 1.0,
+        StaticModel = Base.Teacup_Ground,
+        WorldStaticModel = Base.Teacup_Ground,
+    }
+
+}
