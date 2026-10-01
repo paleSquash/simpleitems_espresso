@@ -3,4 +3,4 @@ id=3798382433
 title=Simple Items: Espresso
 description=Adds espresso item to the game. Similar to coffee but rarer and stronger effect
 tags=Build 42;Food;Items;WIP
-visibility=private
+visibility=public

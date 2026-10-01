@@ -8,7 +8,7 @@ module Espresso_Recipe {
         Tags = CoffeeMachine,
         inputs
         {
-            item 5 [Esp.Espresso] mode:destroy,
+            item 5 [Esp.Espresso],
             item 1 [Base.Teacup;Base.CeramicTeacup] mode:destroy,
             -fluid 0.1 categories[Water],
         }
